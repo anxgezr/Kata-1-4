@@ -1,0 +1,156 @@
+/* Шрифт */
+@font-face 
+{
+    font-family: 'TT Lakes';
+    src: url(files/TTLakes/TTLakes-Regular.woff) format("truetype");
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'TT Lakes';
+    src: url(files/TTLakes/TTLakes-Bold.woff) format("truetype");
+    font-weight:bold;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'TT Lakes Medium';
+    src: url(files/TTLakes/TTLakes-Medium.woff) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*Тело блока*/
+.menu-header {
+     display: flex;
+     height: 51px;
+     align-items: center;
+     margin-bottom: 50.27px;
+     margin-top: 18.73px;
+}
+
+.aside-header__logo {
+    height: 51px;
+    width: 97px;
+    margin-right: 62px;
+}
+
+.menu-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 320px;                
+    height: 100vh;
+    padding: 0 24px;
+    background: white;
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
+    z-index: 1000; 
+}
+
+.menu-header__actions {
+     display: flex;
+     width: 100%;
+     height: 100%;
+     gap:16px;
+}
+
+.menu-sidebar__nav {
+    position: relative;
+}
+
+.menu-sidebar__item {
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.menu-sidebar__link:hover {
+    color: #7E7E82; 
+    z-index: 1; 
+}
+
+.menu-sidebar__link:hover::before {
+  content:"";
+  background-image: url(files/img/highlight.svg);
+  width: 4px;
+  height: 32px;
+  position:absolute;
+  left:-24px;
+  transform: translateY(-5px);
+}
+
+/*Кнопки*/
+.button-round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff3e79;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+  background-size: 50%;
+  flex-shrink: 0;
+}
+
+.button-round--сlose {
+    background-image: url(files/img/close.svg);
+    background-size: 16px 16px;
+}
+
+.button-round--search {
+    background-image: url(files/img/search.svg);
+    background-size: 17px 17px;
+}
+
+.button-round--call {
+    background-image: url(files/img/call.svg);
+    background-size: 18px 18px;
+}
+
+.button-round--chat {
+    background-image: url(files/img/chat.svg);
+    background-size: 20px 20px;
+}
+
+.button-round--profile {
+    background-image: url(files/img/profile.svg);
+    background-size: 20px 18px;
+}
+
+/*Контакты*/
+.menu-footer {
+    margin-top: auto;
+}
+
+.menu-footer__list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.menu-footer__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-footer__email {
+    margin-bottom: 12px;
+}
+
+.menu-footer__number {
+    font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;  
+  letter-spacing: -0.6px;
+  margin-bottom: 40px;
+}
+
+.lang__list {
+    display: flex;
+    gap: 11px;
+    margin-bottom:32px;
+}
