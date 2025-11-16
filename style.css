@@ -68,14 +68,20 @@
     margin-bottom: 32px;
 }
 
+.menu-sidebar__link {
+ position: relative;
+ color: #1B1C21;
+ transition: color .2s ease;
+}
+
 .menu-sidebar__link:hover {
-    color: #7E7E82; 
-    z-index: 1; 
+    color: #7E7E82;
 }
 
 .menu-sidebar__link:hover::before {
   content:"";
   background-image: url(files/img/highlight.svg);
+  background-size: 100% 100%;
   width: 4px;
   height: 32px;
   position:absolute;
